@@ -99,6 +99,7 @@
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            user-select: none;
         }
 
         h2 {
@@ -116,10 +117,10 @@
             font-weight: bold;
             cursor: pointer;
             transition: background 0.3s ease, transform 0.2s ease;
+            pointer-events: none;
         }
 
-        .toggle-btn:hover {
-            background: #a10edb;
+        .semana:hover .toggle-btn {
             transform: scale(1.05);
         }
 
@@ -226,7 +227,7 @@
 
     <main>
 
-        <!-- SEMANA 1 (1 PDF + Videos originales) -->
+        <!-- SEMANA 1 -->
         <div class="semana">
             <div class="card-header" onclick="toggleCard(this)">
                 <h2>Semana 1: Introducción a Arduino</h2>
@@ -237,54 +238,45 @@
                 <h3>📄 Introducción Arduino</h3>
                 <p>En este material se definen los conceptos de hardware y software libre, así como los tipos de señales (digitales y análogas), el funcionamiento del microcontrolador y componentes básicos como la resistencia.</p>
                 <iframe src="Introducción Arduino (1) (1) (1).pdf" class="pdf-container"></iframe>
+            </div>
+        </div>
 
+        <!-- SEMANA 2 -->
+        <div class="semana">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>Semana 2: Práctica en Tinkercad</h2>
+                <button class="toggle-btn">Ocultar / Mostrar</button>
+            </div>
+            
+            <div class="card-content">
                 <h3>🎥 Mi Práctica en Tinkercad</h3>
                 <p>Evidencia visual del funcionamiento de un circuito utilizando una placa Arduino, control de señales digitales y la programación para generar el parpadeo de LED.</p>
                 <div class="video-wrapper">
                     <video controls><source src="Grabación 2026-05-05 123516.mp4" type="video/mp4"></video>
                 </div>
+            </div>
+        </div>
 
+        <!-- SEMANA 3 -->
+        <div class="semana">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>Semana 3: Circuito RGB</h2>
+                <button class="toggle-btn">Ocultar / Mostrar</button>
+            </div>
+            
+            <div class="card-content">
                 <h3>🎥 Circuito RGB</h3>
-                <p>Circuito que cambia de colores (rojo, azul y verde).</p>
+                <p>Circuito que cambia de colores (rojo, azul y verde) utilizando programación en Arduino.</p>
                 <div class="video-wrapper">
-                    <video controls><source src="6cf69f687a1b4a50bc526a2e409ac8f6 (2).mov" type="video/mp4"></video>
+                    <video controls>
+                        <source src="6cf69f687a1b4a50bc526a2e409ac8f6 (2).mov" type="video/quicktime">
+                        <source src="6cf69f687a1b4a50bc526a2e409ac8f6 (2).mov" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
 
-        <!-- SEMANA 2 (1 Video) -->
-        <div class="semana">
-            <div class="card-header" onclick="toggleCard(this)">
-                <h2>Semana 2: Título de la Semana 2</h2>
-                <button class="toggle-btn">Ocultar / Mostrar</button>
-            </div>
-            
-            <div class="card-content">
-                <h3>🎥 Video de la Práctica - Semana 2</h3>
-                <p>Descripción del circuito o práctica realizada durante esta semana.</p>
-                <div class="video-wrapper">
-                    <video controls><source src="video_semana2.mp4" type="video/mp4"></video>
-                </div>
-            </div>
-        </div>
-
-        <!-- SEMANA 3 (1 Video) -->
-        <div class="semana">
-            <div class="card-header" onclick="toggleCard(this)">
-                <h2>Semana 3: Título de la Semana 3</h2>
-                <button class="toggle-btn">Ocultar / Mostrar</button>
-            </div>
-            
-            <div class="card-content">
-                <h3>🎥 Video de la Práctica - Semana 3</h3>
-                <p>Descripción del circuito o práctica realizada durante esta semana.</p>
-                <div class="video-wrapper">
-                    <video controls><source src="video_semana3.mp4" type="video/mp4"></video>
-                </div>
-            </div>
-        </div>
-
-        <!-- SEMANA 4 (1 Video) -->
+        <!-- SEMANA 4 -->
         <div class="semana">
             <div class="card-header" onclick="toggleCard(this)">
                 <h2>Semana 4: Título de la Semana 4</h2>
@@ -300,7 +292,7 @@
             </div>
         </div>
 
-        <!-- SEMANA 5 (1 Video) -->
+        <!-- SEMANA 5 -->
         <div class="semana">
             <div class="card-header" onclick="toggleCard(this)">
                 <h2>Semana 5: Título de la Semana 5</h2>
@@ -316,7 +308,7 @@
             </div>
         </div>
 
-        <!-- SEMANA 6 (1 Video) -->
+        <!-- SEMANA 6 -->
         <div class="semana">
             <div class="card-header" onclick="toggleCard(this)">
                 <h2>Semana 6: Título de la Semana 6</h2>
