@@ -55,7 +55,7 @@
         }
 
         header {
-            padding: 50px 20px;
+            padding: 40px 20px 50px 20px;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(15px);
             border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -63,13 +63,30 @@
             box-shadow: 0 8px 32px 0 rgba(255, 112, 166, 0.2);
             text-align: center;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Estilo para el logo superior */
+        .header-logo {
+            max-width: 140px;
+            height: auto;
+            filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .header-logo:hover {
+            transform: scale(1.08) rotate(-3deg);
+            filter: drop-shadow(0 0 20px rgba(255, 112, 166, 0.9));
         }
 
         h1 {
             color: #ffffff;
             text-shadow: 0 0 10px #ff70a6, 0 0 20px #ff477e, 0 0 30px #c77dff;
             margin: 0;
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 700;
             letter-spacing: 2px;
             animation: pulseGlow 2.5s infinite alternate;
@@ -213,6 +230,7 @@
         video {
             width: 100%;
             display: block;
+            border-radius: 15px;
         }
 
         footer {
@@ -267,6 +285,8 @@
     <div id="progress-bar"></div>
 
     <header>
+        <!-- Logo en la parte superior del Header -->
+        <img src="IMG_4939.jpeg" alt="Logo Escudo" class="header-logo">
         <h1>Bitácora Segunda y Tercera Unidad ✨</h1>
     </header> 
 
@@ -297,7 +317,9 @@
                 <h3>🎥 Mi Práctica en Tinkercad</h3>
                 <p>Evidencia visual del funcionamiento de un circuito utilizando una placa Arduino, control de señales digitales y la programación para generar el parpadeo de LED.</p>
                 <div class="video-wrapper">
-                    <video controls><source src="Grabación 2026-05-05 123516.mp4" type="video/mp4"></video>
+                    <video controls>
+                        <source src="Grabación 2026-05-05 123516.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -332,7 +354,10 @@
                 <h3>🎥 Video de la Práctica - Semana 4</h3>
                 <p>Descripción del circuito o práctica realizada durante esta semana.</p>
                 <div class="video-wrapper">
-                    <video controls><source src="Semana 4.mov" type="video/mp4"></video>
+                    <video controls>
+                        <source src="Semana 4.mov" type="video/quicktime">
+                        <source src="Semana 4.mov" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -348,7 +373,10 @@
                 <h3>🎥 Video de la Práctica - Semana 5</h3>
                 <p>Descripción del circuito o práctica realizada durante esta semana.</p>
                 <div class="video-wrapper">
-                    <video controls><source src="semana 5.mov" type="video/mp4"></video>
+                    <video controls>
+                        <source src="semana 5.mov" type="video/quicktime">
+                        <source src="semana 5.mov" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -364,7 +392,9 @@
                 <h3>🎥 Video de la Práctica - Semana 6</h3>
                 <p>Descripción del circuito o práctica realizada durante esta semana.</p>
                 <div class="video-wrapper">
-                    <video controls><source src="video semana 6.MP4" type="video/mp4"></video>
+                    <video controls>
+                        <source src="video semana 6.MP4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
